@@ -170,11 +170,7 @@ hr{
     margin-top: 50px;
 }
 /* extra section  */
-.extra{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .extra-container{
     background-color: rgb(255, 255, 255);
     width: 1090px;
@@ -237,7 +233,7 @@ hr{
 .other-2 button{
     margin-left: 50px;
 }
-.extra p{
+.extra-container p{
     color: #e02c6d;
     text-align: right;
     font-size: 16px;
@@ -264,4 +260,26 @@ footer{
 }
 .icon{
     padding: 17px;
+}
+
+/* for mobile divice */
+
+@media only screen and (max-width:688px){
+    .container, .nav-container, .product-container, .extra-container, .footer{
+        width: 100%;
+    }
+    .e-commers-banner, .products, .extras-cart{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .list ul, .product, .extras{
+        flex-direction: column;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
 }
