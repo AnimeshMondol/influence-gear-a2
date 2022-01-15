@@ -16,8 +16,42 @@ main{
     border-radius: 10px;
 }
 /* header style */
-
-
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+.nav-container{
+    background-color: rgb(255, 255, 255);
+    width: 1090px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: -34px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title h1{
+    font-size: 24px;
+    color: #3a3a3a;
+    padding: 25px;
+}
+.list ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.list a{
+    text-decoration: none;
+    color: #3a3a3a;
+    margin-right: 20px;
+    font-size: 16px;
+    
+}
 /* top section  */
 
 .top-section{
@@ -69,6 +103,13 @@ hr{
 } 
 
 /* product part  */
+.product-container{
+    background-color: rgb(255, 255, 255);
+    width: 1090px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -121,6 +162,88 @@ hr{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.product-container p{
+    color: #e02c6d;
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+/* extra section  */
+.extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.extra-container{
+    background-color: rgb(255, 255, 255);
+    width: 1090px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.extras-cart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    justify-items: center;
+    grid-row-gap: 30px;
+}
+.extras{
+    height: 550px;
+    width: 302px;
+    background-color: rgb(241, 237, 243);
+    border-radius: 10px;
+    padding: 20px;
+}
+.extras:hover{
+    box-shadow: 5px 5px rgba(53, 59, 119, 0.212);
+}
+.content-creator-name h3{
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 16px;
+    text-align: center;
+}
+.content-creator-name h4{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-creator-name h2{
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgb(202, 12, 53);
+    font-weight: 900;
+}
+.reating2{
+    display: flex;
+    justify-content: center;
+}
+.thumb-2 img{
+    width: 300px;
+    height: 300px;
+}
+.other-2 h6{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.other-2 button{
+    margin-left: 50px;
+}
+.extra p{
+    color: #e02c6d;
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
 /* footersection */
 
 footer{
@@ -128,6 +251,7 @@ footer{
     background-color: rgb(3, 3, 54);
     color: white;
     padding: 50px;
+    position: sticky;
 }
 .footer-heading h2{
     font-size: 25px;
